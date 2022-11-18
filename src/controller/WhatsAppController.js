@@ -45,5 +45,17 @@ class WhatsAppController {
 
         }
 
+        Element.prototype.css = function(estilos){
+
+            for(let nome in estilos){
+
+                this.style[nome] = estilos[nome]
+            }
+        }
+
+        Element.prototype.addClass = function(nome){
+
+        }
+
     }
 }
